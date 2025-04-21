@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title Slide</title>
+    <style>
+      .image-container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .image-container img {
+        margin: 0 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="$idprefix$title-slide">
+      <h1 class="title">$title$</h1>
+      $if(subtitle)$
+      <p class="subtitle">$subtitle$</p>
+      $endif$ $for(author)$
+      <p class="author">$author$</p>
+      $endfor$ $for(affiliation)$
+      <p class="affiliation">$affiliation$</p>
+      $endfor$ $if(date)$
+      <p class="date">$date$</p>
+      $endif$
+      <br />
+      <div class="logo-title">
+        <div class="image-grid">
+          <img
+            src="img/logo/dal.png"
+            height="150px"
+            alt="Logo of Dalhousie University"
+          /><img
+            src="img/logo/ulaval.png"
+            height="150"
+            alt="Logo of Université Laval"
+          /><img src="img/logo/uqar.png" height="150" alt="Logo of UQAR" /><img
+            src="img/logo/memorial.png"
+            height="150"
+            alt="Logo of Memorial University"
+          />
+        </div>
+      </div>
+
+      <style>
+        .image-grid {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 50px;
+          max-width: 800px;
+          margin: 0 auto;
+        }
+        .image-grid img {
+          margin: 0;
+        }
+      </style>
+    </section>
+  </body>
+</html>
