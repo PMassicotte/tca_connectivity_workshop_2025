@@ -270,6 +270,8 @@ These files contain information on geographic features such as [points, lines or
 
   - Technically, the shapefile format is not open. [It is however widely used.]{.emphasize}
 
+- GeoPackage (`.gpkg`)
+
 - GeoJSON (`.json`, `.geojson`, JSON variant with simple geographical features)
 
 - GeoTIFF (`.tif`, `.tiff`, TIFF variant enriched with GIS relevant metadata)
@@ -1134,9 +1136,7 @@ Many journals and [funding agencies](http://www.science.gc.ca/eic/site/063.nsf/f
 
 - Make your data [discoverable]{.emphasize} and [citable]{.emphasize} (using [DOI, Digital Object Identifier]{.emphasize}).
 
-- Long-term preservation
-
-  - Professional data centers ensure long-term accessibility
+- Professional data centers ensure long-term accessibility
 
 - Data can be reused in other studies (promotes scientific collaboration)
 
@@ -1151,7 +1151,7 @@ The traditional way to publish data is to include it as supplementary informatio
 
 [The Directory of Open Access Journals](https://www.doaj.org/) is useful for searching for open access journals.
 
-![](img/logo/doaj_logo.png){.r-stretch fig-alt="Directory of Open Access Journals logo. The logo has three shapes on the left side and the text 'DOAJ' on the right side."}
+![](img/logo/doaj_logo.png){.r-stretch, .center-align fig-alt="Directory of Open Access Journals logo. The logo has three shapes on the left side and the text 'DOAJ' on the right side."}
 
 ## Public announcement {{< fa bullhorn >}}
 
