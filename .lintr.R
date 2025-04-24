@@ -5,8 +5,8 @@ linters <- lintr::all_linters(
   object_name_linter = NULL,
   object_usage_linter = NULL,
   unused_import_linter = NULL,
-  # one_call_pipe_linter = NULL,
-  # consecutive_mutate_linter = NULL,
+  one_call_pipe_linter = NULL,
+  consecutive_mutate_linter = NULL,
   undesirable_function_linter = undesirable_function_linter(
     fun = modify_defaults(
       defaults = default_undesirable_functions,
