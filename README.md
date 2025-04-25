@@ -1,8 +1,6 @@
 # TCA workshop at Laval University (2025)
 
-<!-- TODO: Replace with proper link-->
-
-[![Quarto Publish](https://github.com/PMassicotte/journee_ppr_ulaval_2024/actions/workflows/quarto_build.yml/badge.svg)](https://github.com/PMassicotte/journee_ppr_ulaval_2024/actions/workflows/quarto_build.yml)
+[![pages-build-deployment](https://github.com/PMassicotte/tca_connectivity_workshop_2025/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/PMassicotte/tca_connectivity_workshop_2025/actions/workflows/pages/pages-build-deployment) [![Quarto Publish](https://github.com/PMassicotte/tca_connectivity_workshop_2025/actions/workflows/quarto_build.yml/badge.svg)](https://github.com/PMassicotte/tca_connectivity_workshop_2025/actions/workflows/quarto_build.yml)
 
 Presentation covering topics such as open file formats, data organization, data cleaning and formatting, backups, and data publishing.
 
