@@ -388,7 +388,6 @@
 <li class="fragment"><p>GeoPackage (<code>.gpkg</code>)</p></li>
 <li class="fragment"><p>GeoJSON (<code>.json</code>, <code>.geojson</code>, JSON variant with simple geographical features)</p></li>
 <li class="fragment"><p>GeoTIFF (<code>.tif</code>, <code>.tiff</code>, TIFF variant enriched with GIS relevant metadata)</p></li>
-<li class="fragment"><p>GeoParquet (<code>.parquet</code>) is an <a href="https://geoparquet.org/">Open Geospatial Consortium (OGC) standard</a> standard that adds interoperable geospatial types (Point, Line, Polygon) to <a href="https://parquet.apache.org/">Apache Parquet</a>.</p></li>
 </ul>
 </div>
 </section>
@@ -427,18 +426,13 @@
 <img data-src="index_files/figure-revealjs/geojson-1.png" style="width:75.0%" alt="The outline of the Colosseum amphitheatre in Rome created using a geojson file." class="r-stretch quarto-figure-center"><p class="caption">Data: <a href="https://bit.ly/2pAjOAr">https://bit.ly/2pAjOAr</a></p></section>
 <section id="the-geotiff-format" class="slide level2">
 <h2>The GeoTIFF format</h2>
-<ul>
-<li>Often associated with satellite imagery and remote sensing data
-<ul>
-<li>gridded observations where each pixel represents a measurement at regular spatial intervals</li>
-</ul></li>
-</ul>
+<p>Often associated with satellite imagery and remote sensing data (gridded observations where each pixel represents a measurement at regular spatial intervals)</p>
 <blockquote>
 <p>GeoTIFF is a public domain metadata standard that allows <span class="emphasize">georeferencing information to be embedded within a TIFF file.</span> The potential additional information includes map projection, coordinate systems, ellipsoids, datums, and everything else necessary to establish the exact spatial reference for the file.</p>
 <p><a href="https://en.wikipedia.org/wiki/GeoTIFF">Wikipedia</a></p>
 </blockquote>
 <div class="center-align">
-<p><img data-src="img/ai/geotiff.jpeg" alt="AI generated image of a computer screen showing some sci-fi images." width="600"></p>
+<p><img data-src="img/ai/geotiff.jpeg" alt="AI generated image of a computer screen showing some sci-fi images." width="500"></p>
 </div>
 </section>
 <section id="the-geotiff-format-sst" class="slide level2">
@@ -459,23 +453,23 @@
 <p><strong>Geographic data presented in a tabular form:</strong></p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="aahsxibsvo" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#aahsxibsvo table {
+<div id="qkrsjzybpd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#qkrsjzybpd table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#aahsxibsvo thead, #aahsxibsvo tbody, #aahsxibsvo tfoot, #aahsxibsvo tr, #aahsxibsvo td, #aahsxibsvo th {
+#qkrsjzybpd thead, #qkrsjzybpd tbody, #qkrsjzybpd tfoot, #qkrsjzybpd tr, #qkrsjzybpd td, #qkrsjzybpd th {
   border-style: none;
 }
 
-#aahsxibsvo p {
+#qkrsjzybpd p {
   margin: 0;
   padding: 0;
 }
 
-#aahsxibsvo .gt_table {
+#qkrsjzybpd .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -501,12 +495,12 @@
   border-left-color: #D3D3D3;
 }
 
-#aahsxibsvo .gt_caption {
+#qkrsjzybpd .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#aahsxibsvo .gt_title {
+#qkrsjzybpd .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -518,7 +512,7 @@
   border-bottom-width: 0;
 }
 
-#aahsxibsvo .gt_subtitle {
+#qkrsjzybpd .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -530,7 +524,7 @@
   border-top-width: 0;
 }
 
-#aahsxibsvo .gt_heading {
+#qkrsjzybpd .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -542,13 +536,13 @@
   border-right-color: #D3D3D3;
 }
 
-#aahsxibsvo .gt_bottom_border {
+#qkrsjzybpd .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#aahsxibsvo .gt_col_headings {
+#qkrsjzybpd .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -563,7 +557,7 @@
   border-right-color: #D3D3D3;
 }
 
-#aahsxibsvo .gt_col_heading {
+#qkrsjzybpd .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -583,7 +577,7 @@
   overflow-x: hidden;
 }
 
-#aahsxibsvo .gt_column_spanner_outer {
+#qkrsjzybpd .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -595,15 +589,15 @@
   padding-right: 4px;
 }
 
-#aahsxibsvo .gt_column_spanner_outer:first-child {
+#qkrsjzybpd .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#aahsxibsvo .gt_column_spanner_outer:last-child {
+#qkrsjzybpd .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#aahsxibsvo .gt_column_spanner {
+#qkrsjzybpd .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -615,11 +609,11 @@
   width: 100%;
 }
 
-#aahsxibsvo .gt_spanner_row {
+#qkrsjzybpd .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#aahsxibsvo .gt_group_heading {
+#qkrsjzybpd .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -645,7 +639,7 @@
   text-align: left;
 }
 
-#aahsxibsvo .gt_empty_group_heading {
+#qkrsjzybpd .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -660,15 +654,15 @@
   vertical-align: middle;
 }
 
-#aahsxibsvo .gt_from_md > :first-child {
+#qkrsjzybpd .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#aahsxibsvo .gt_from_md > :last-child {
+#qkrsjzybpd .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#aahsxibsvo .gt_row {
+#qkrsjzybpd .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -687,7 +681,7 @@
   overflow-x: hidden;
 }
 
-#aahsxibsvo .gt_stub {
+#qkrsjzybpd .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -700,7 +694,7 @@
   padding-right: 5px;
 }
 
-#aahsxibsvo .gt_stub_row_group {
+#qkrsjzybpd .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -714,15 +708,15 @@
   vertical-align: top;
 }
 
-#aahsxibsvo .gt_row_group_first td {
+#qkrsjzybpd .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#aahsxibsvo .gt_row_group_first th {
+#qkrsjzybpd .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#aahsxibsvo .gt_summary_row {
+#qkrsjzybpd .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -732,16 +726,16 @@
   padding-right: 5px;
 }
 
-#aahsxibsvo .gt_first_summary_row {
+#qkrsjzybpd .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#aahsxibsvo .gt_first_summary_row.thick {
+#qkrsjzybpd .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#aahsxibsvo .gt_last_summary_row {
+#qkrsjzybpd .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -751,7 +745,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#aahsxibsvo .gt_grand_summary_row {
+#qkrsjzybpd .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -761,7 +755,7 @@
   padding-right: 5px;
 }
 
-#aahsxibsvo .gt_first_grand_summary_row {
+#qkrsjzybpd .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -771,7 +765,7 @@
   border-top-color: #D3D3D3;
 }
 
-#aahsxibsvo .gt_last_grand_summary_row_top {
+#qkrsjzybpd .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -781,11 +775,11 @@
   border-bottom-color: #D3D3D3;
 }
 
-#aahsxibsvo .gt_striped {
+#qkrsjzybpd .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#aahsxibsvo .gt_table_body {
+#qkrsjzybpd .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -794,7 +788,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#aahsxibsvo .gt_footnotes {
+#qkrsjzybpd .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -808,7 +802,7 @@
   border-right-color: #D3D3D3;
 }
 
-#aahsxibsvo .gt_footnote {
+#qkrsjzybpd .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -817,7 +811,7 @@
   padding-right: 5px;
 }
 
-#aahsxibsvo .gt_sourcenotes {
+#qkrsjzybpd .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -831,7 +825,7 @@
   border-right-color: #D3D3D3;
 }
 
-#aahsxibsvo .gt_sourcenote {
+#qkrsjzybpd .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -839,72 +833,72 @@
   padding-right: 5px;
 }
 
-#aahsxibsvo .gt_left {
+#qkrsjzybpd .gt_left {
   text-align: left;
 }
 
-#aahsxibsvo .gt_center {
+#qkrsjzybpd .gt_center {
   text-align: center;
 }
 
-#aahsxibsvo .gt_right {
+#qkrsjzybpd .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#aahsxibsvo .gt_font_normal {
+#qkrsjzybpd .gt_font_normal {
   font-weight: normal;
 }
 
-#aahsxibsvo .gt_font_bold {
+#qkrsjzybpd .gt_font_bold {
   font-weight: bold;
 }
 
-#aahsxibsvo .gt_font_italic {
+#qkrsjzybpd .gt_font_italic {
   font-style: italic;
 }
 
-#aahsxibsvo .gt_super {
+#qkrsjzybpd .gt_super {
   font-size: 65%;
 }
 
-#aahsxibsvo .gt_footnote_marks {
+#qkrsjzybpd .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#aahsxibsvo .gt_asterisk {
+#qkrsjzybpd .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#aahsxibsvo .gt_indent_1 {
+#qkrsjzybpd .gt_indent_1 {
   text-indent: 5px;
 }
 
-#aahsxibsvo .gt_indent_2 {
+#qkrsjzybpd .gt_indent_2 {
   text-indent: 10px;
 }
 
-#aahsxibsvo .gt_indent_3 {
+#qkrsjzybpd .gt_indent_3 {
   text-indent: 15px;
 }
 
-#aahsxibsvo .gt_indent_4 {
+#qkrsjzybpd .gt_indent_4 {
   text-indent: 20px;
 }
 
-#aahsxibsvo .gt_indent_5 {
+#qkrsjzybpd .gt_indent_5 {
   text-indent: 25px;
 }
 
-#aahsxibsvo .katex-display {
+#qkrsjzybpd .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#aahsxibsvo div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#qkrsjzybpd div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -975,13 +969,13 @@
 <li>Can cause import errors in GIS software</li>
 </ul></li>
 </ul>
-<p>For example, the same location (Quebec City) can be expressed in three formats:</p>
+<div>
 <ul>
-<li><strong>Decimal Degrees (DD)</strong>: <code>46.8139, -71.2082</code> <span class="emphasize">Recommended</span></li>
-<li><strong>Degrees Decimal Minutes (DDM)</strong>: <code>46° 48.833'N, 71° 12.498'W</code></li>
-<li><strong>Degrees Minutes Seconds (DMS)</strong>: <code>46° 48' 50.0"N, 71° 12' 29.9"W</code></li>
+<li class="fragment"><span style="color: #E6352FFF;"><i class="fa-solid fa-times" aria-label="times"></i></span> <strong>Degrees Decimal Minutes (DDM)</strong>: <code>46° 48.833'N, 71° 12.498'W</code></li>
+<li class="fragment"><span style="color: #E6352FFF;"><i class="fa-solid fa-times" aria-label="times"></i></span> <strong>Degrees Minutes Seconds (DMS)</strong>: <code>46° 48' 50.0"N, 71° 12' 29.9"W</code></li>
+<li class="fragment"><span style="color: #34A74BFF;"><i class="fa-solid fa-check" aria-label="check"></i></span> <strong>Decimal Degrees (DD)</strong>: <code>46.8139, -71.2082</code></li>
 </ul>
-<p><span class="emphasize">The decimal degrees format is the standard in most modern GIS and mapping applications.</span></p>
+</div>
 </section></section>
 <section>
 <section id="file-naming-and-project-organization" class="title-slide slide level1 center" data-background-color="#2C404A">

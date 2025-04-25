@@ -277,8 +277,6 @@ These files contain information on geographic features such as [points, lines or
 
 - GeoTIFF (`.tif`, `.tiff`, TIFF variant enriched with GIS relevant metadata)
 
-- GeoParquet (`.parquet`) is an [Open Geospatial Consortium (OGC) standard](https://geoparquet.org/) standard that adds interoperable geospatial types (Point, Line, Polygon) to [Apache Parquet](https://parquet.apache.org/).
-
 :::
 
 ## The GeoJSON format (Polygons)
@@ -371,8 +369,7 @@ sf |>
 
 ## The GeoTIFF format
 
-- Often associated with satellite imagery and remote sensing data
-  - gridded observations where each pixel represents a measurement at regular spatial intervals
+Often associated with satellite imagery and remote sensing data (gridded observations where each pixel represents a measurement at regular spatial intervals)
 
 > GeoTIFF is a public domain metadata standard that allows [georeferencing information to be embedded within a TIFF file.]{.emphasize} The potential additional information includes map projection, coordinate systems, ellipsoids, datums, and everything else necessary to establish the exact spatial reference for the file.
 >
@@ -380,7 +377,7 @@ sf |>
 
 ::: {.center-align}
 
-![](img/ai/geotiff.jpeg){width=600 fig-alt="AI generated image of a computer screen showing some sci-fi images."}
+![](img/ai/geotiff.jpeg){width=500 fig-alt="AI generated image of a computer screen showing some sci-fi images."}
 
 :::
 
@@ -581,16 +578,17 @@ pixel_values |>
 - [Always use decimal degrees for latitude and longitude coordinates.]{.emphasize}
 
 - Degrees Minutes Seconds (DMS) and Degrees Decimal Minutes (DDM) formats should be avoided as they:
+
   - Are more difficult to work with in analysis
   - Can cause import errors in GIS software
 
-For example, the same location (Quebec City) can be expressed in three formats:
+::: {.incremental}
 
-- **Decimal Degrees (DD)**: `46.8139, -71.2082` [Recommended]{.emphasize}
-- **Degrees Decimal Minutes (DDM)**: `46° 48.833'N, 71° 12.498'W`
-- **Degrees Minutes Seconds (DMS)**: `46° 48' 50.0"N, 71° 12' 29.9"W`
+- [{{< fa times >}}]{style="color: #E6352FFF;"} **Degrees Decimal Minutes (DDM)**: `46° 48.833'N, 71° 12.498'W`
+- [{{< fa times >}}]{style="color: #E6352FFF;"} **Degrees Minutes Seconds (DMS)**: `46° 48' 50.0"N, 71° 12' 29.9"W`
+- [{{< fa check >}}]{style="color: #34A74BFF;"} **Decimal Degrees (DD)**: `46.8139, -71.2082`
 
-[The decimal degrees format is the standard in most modern GIS and mapping applications.]{.emphasize}
+:::
 
 # File naming and project organization {background-color="#2C404A"}
 
