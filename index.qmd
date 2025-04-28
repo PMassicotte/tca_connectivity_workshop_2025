@@ -370,7 +370,7 @@ sf |>
 
 ## The GeoTIFF format
 
-Often associated with satellite imagery and remote sensing data (gridded observations where each pixel represents a measurement at regular spatial intervals)
+Often associated with satellite imagery (gridded observations where each pixel represents a measurement at regular spatial intervals)
 
 > GeoTIFF is a public domain metadata standard that allows [georeferencing information to be embedded within a TIFF file.]{.emphasize} The potential additional information includes map projection, coordinate systems, ellipsoids, datums, and everything else necessary to establish the exact spatial reference for the file.
 >
@@ -1403,5 +1403,7 @@ df_viz |>
 - Use a version control system (git) for your analysis scripts.
 
 - [When possible, share the data and the scripts that were used in your research papers.]{.emphasize}
+
+- If you have any questions regarding your data, do not hesitate to contact your designated data scientist at your institution.
 
 :::
