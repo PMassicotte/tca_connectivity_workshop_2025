@@ -370,7 +370,7 @@ sf |>
 
 ## The GeoTIFF format
 
-Often associated with satellite imagery (gridded observations where each pixel represents a measurement at regular spatial intervals)
+Often associated with satellite imagery and remote sensing data (gridded observations where each pixel represents a measurement at regular spatial intervals)
 
 > GeoTIFF is a public domain metadata standard that allows [georeferencing information to be embedded within a TIFF file.]{.emphasize} The potential additional information includes map projection, coordinate systems, ellipsoids, datums, and everything else necessary to establish the exact spatial reference for the file.
 >
@@ -808,9 +808,7 @@ The main idea is that data should be organized in columns with [each column repr
 
 - Many researchers structure their data in such a way that it is easily manipulated by a human, [but not so much programatically]{.emphasize}.
 
-. . .
-
-- Common issues with data:
+- Common issues
   1. Column headers are values, not variable names
   2. Multiple variables in a single column
 
@@ -823,7 +821,9 @@ species
 
 ## Column headers are values
 
-In this example, the column headers are values (species names) rather than variable names. We are turning `arctic_tern` and `glaucous_gull` into two separate columns: `species` and `count`.
+In this example, the column headers are values (species names) rather than variable names.
+
+<br>
 
 :::: {.columns}
 
@@ -851,7 +851,7 @@ species_pivoted
 
 ## Multiple variables in a single column
 
-Like the `coordinates` column in the example below. We can separate the `coordinates` column into two columns: `longitude` and `latitude`.
+Like the `coordinates` column in the example below.
 
 <br>
 
@@ -878,52 +878,27 @@ species_clean
 
 ::::
 
-## Mapping the tidy data
-
-Once the data is tidy, it is easy to visualize it. We can use the coordinates to plot the data on a map and choose a better projection.
+## Map
 
 ```{r}
-#| label: map_greenland
-#| crop: true
-#| dev: ragg_png
-#| dev.args: {bg: "transparent"}
-
 species_clean_sf <- species_clean |>
   distinct(station_name, .keep_all = TRUE) |>
   st_as_sf(coords = c("longitude", "latitude"), crs = 4326L)
 
-wm <- rnaturalearth::ne_countries(
-  country = "Greenland",
-  scale = "large",
-  returnclass = "sf"
-)
+wm <- rnaturalearth::ne_countries(scale = "large", returnclass = "sf") |>
+  st_make_valid() |>
+  st_crop(species_clean_sf)
 
-p1 <- ggplot() +
-  geom_sf(data = wm, linewidth = 0.1) +
-  geom_sf(data = species_clean_sf, color = "red") +
-  ggrepel::geom_text_repel(
-    data = species_clean_sf,
-    aes(label = station_name, geometry = geometry),
-    stat = "sf_coordinates",
-    size = 3L,
-    fontface = "bold",
-    max.overlaps = 100L,
-    segment.size = 0.2
+ggplot() +
+  geom_sf(data = wm) +
+  geom_sf(data = species_clean_sf) +
+  scale_color_viridis_d() +
+  labs(
+    title = "Species distribution",
+    x = NULL,
+    y = NULL
   ) +
-  theme(
-    panel.background = element_rect(fill = NA, color = NA),
-    plot.background = element_rect(fill = NA, color = NA),
-    axis.title = element_blank(),
-    axis.text = element_text(size = 6L),
-    panel.grid = element_line(linewidth = 0.1, color = "#3c3c3c")
-  )
-
-p2 <- p1 +
-  coord_sf(crs = 6065L)
-
-p1 +
-  p2 +
-  plot_annotation(theme = theme(plot.background = element_blank()))
+  theme(legend.position = "bottom")
 ```
 
 ## Keep your data as rectangle tables
@@ -1253,7 +1228,7 @@ Many journals and [funding agencies](http://www.science.gc.ca/eic/site/063.nsf/f
 
 - Professional data centers ensure long-term accessibility
 
-- Data can be reused in other studies (promotes scientific collaborations)
+- Data can be reused in other studies (promotes scientific collaboration)
 
 :::
 
@@ -1403,7 +1378,5 @@ df_viz |>
 - Use a version control system (git) for your analysis scripts.
 
 - [When possible, share the data and the scripts that were used in your research papers.]{.emphasize}
-
-- If you have any questions regarding your data, do not hesitate to contact your designated data scientist at your institution.
 
 :::
