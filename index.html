@@ -6,10 +6,10 @@
 <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="index_files/libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="index_files/libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.43">
+  <meta name="generator" content="quarto-1.7.30">
 
   <meta name="author" content="Philippe Massicotte">
   <meta name="dcterms.date" content="2025-04-30">
@@ -32,8 +32,9 @@
       vertical-align: middle;
     }
     /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
     pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -44,7 +45,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -97,7 +98,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-b03e3060ee8cecc997b31af1f9e23f41.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-3bedd8dce424e83eb33b2d2f2178e487.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -262,7 +263,6 @@
 </div></aside></section>
 <section id="outlines" class="slide level2">
 <h2>Outlines</h2>
-<div>
 <ul>
 <li class="fragment"><p>Open file formats for your data.</p>
 <ul>
@@ -274,7 +274,6 @@
 <li class="fragment"><p>Backups.</p></li>
 <li class="fragment"><p>Publishing your data.</p></li>
 </ul>
-</div>
 </section>
 <section>
 <section id="file-formats" class="title-slide slide level1 center" data-background-color="#2C404A">
@@ -309,12 +308,10 @@
 <div class="column" style="width:50%;">
 <p>Laboratory computer programs often use proprietary file formats.</p>
 <p>This likely means that:</p>
-<div>
 <ol type="1">
 <li class="fragment"><p>You are forced to buy a license <span class="emphasize">which can be expensive</span>.</p></li>
 <li class="fragment"><p>You depend on the commitment of the company to support the file format in the future.</p></li>
 </ol>
-</div>
 </div><div class="column" style="width:50%;">
 <p><img data-src="img/ai/old_school_lab.jpeg" alt="Old-school laboratory" width="800"></p>
 </div></div>
@@ -339,14 +336,12 @@
 <section id="file-formats-2" class="slide level2">
 <h2>File formats</h2>
 <p>Ideally, the chosen file format should have these characteristics:</p>
-<div>
 <ol type="1">
 <li class="fragment"><p><strong>Non-proprietary</strong>: open source.</p></li>
 <li class="fragment"><p><strong>Unencrypted</strong>: <span class="emphasize">unless it contains personal or sensitive data.</span></p></li>
 <li class="fragment"><p><strong>Human-readable</strong>: the file should be human-readable <span class="emphasize">or have open source tools available for reading and writing</span>.</p></li>
 <li class="fragment"><p><strong>Performance</strong>: consideration for efficient read and write operations, especially for large datasets, is crucial for optimal performance.</p></li>
 </ol>
-</div>
 </section>
 <section id="common-open-source-text-file-formats" class="slide level2">
 <h2>Common open-source text file formats</h2>
@@ -379,7 +374,6 @@
 <section id="common-open-source-geographic-file-formats" class="slide level2">
 <h2>Common open-source geographic file formats</h2>
 <p>These files contain information on geographic features such as <span class="emphasize">points, lines or polygons</span>. There are a ton of <a href="https://gisgeography.com/gis-formats/">geographical file formats</a>, but here are some that are particularly popular.</p>
-<div>
 <ul>
 <li class="fragment"><p>ESRI shapefile (<code>.SHP</code>)</p>
 <ul>
@@ -389,7 +383,6 @@
 <li class="fragment"><p>GeoJSON (<code>.json</code>, <code>.geojson</code>, JSON variant with simple geographical features)</p></li>
 <li class="fragment"><p>GeoTIFF (<code>.tif</code>, <code>.tiff</code>, TIFF variant enriched with GIS relevant metadata)</p></li>
 </ul>
-</div>
 </section>
 <section id="the-geojson-format-polygons" class="slide level2">
 <h2>The GeoJSON format (Polygons)</h2>
@@ -426,7 +419,7 @@
 <img data-src="index_files/figure-revealjs/geojson-1.png" style="width:75.0%" alt="The outline of the Colosseum amphitheatre in Rome created using a geojson file." class="r-stretch quarto-figure-center"><p class="caption">Data: <a href="https://bit.ly/2pAjOAr">https://bit.ly/2pAjOAr</a></p></section>
 <section id="the-geotiff-format" class="slide level2">
 <h2>The GeoTIFF format</h2>
-<p>Often associated with satellite imagery (gridded observations where each pixel represents a measurement at regular spatial intervals)</p>
+<p>Often associated with satellite imagery and remote sensing data (gridded observations where each pixel represents a measurement at regular spatial intervals)</p>
 <blockquote>
 <p>GeoTIFF is a public domain metadata standard that allows <span class="emphasize">georeferencing information to be embedded within a TIFF file.</span> The potential additional information includes map projection, coordinate systems, ellipsoids, datums, and everything else necessary to establish the exact spatial reference for the file.</p>
 <p><a href="https://en.wikipedia.org/wiki/GeoTIFF">Wikipedia</a></p>
@@ -453,23 +446,23 @@
 <p><strong>Geographic data presented in a tabular form:</strong></p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="sbzcftbsws" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#sbzcftbsws table {
+<div id="eqkmkwtylp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#eqkmkwtylp table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#sbzcftbsws thead, #sbzcftbsws tbody, #sbzcftbsws tfoot, #sbzcftbsws tr, #sbzcftbsws td, #sbzcftbsws th {
+#eqkmkwtylp thead, #eqkmkwtylp tbody, #eqkmkwtylp tfoot, #eqkmkwtylp tr, #eqkmkwtylp td, #eqkmkwtylp th {
   border-style: none;
 }
 
-#sbzcftbsws p {
+#eqkmkwtylp p {
   margin: 0;
   padding: 0;
 }
 
-#sbzcftbsws .gt_table {
+#eqkmkwtylp .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -495,12 +488,12 @@
   border-left-color: #D3D3D3;
 }
 
-#sbzcftbsws .gt_caption {
+#eqkmkwtylp .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#sbzcftbsws .gt_title {
+#eqkmkwtylp .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -512,7 +505,7 @@
   border-bottom-width: 0;
 }
 
-#sbzcftbsws .gt_subtitle {
+#eqkmkwtylp .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -524,7 +517,7 @@
   border-top-width: 0;
 }
 
-#sbzcftbsws .gt_heading {
+#eqkmkwtylp .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -536,13 +529,13 @@
   border-right-color: #D3D3D3;
 }
 
-#sbzcftbsws .gt_bottom_border {
+#eqkmkwtylp .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#sbzcftbsws .gt_col_headings {
+#eqkmkwtylp .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -557,7 +550,7 @@
   border-right-color: #D3D3D3;
 }
 
-#sbzcftbsws .gt_col_heading {
+#eqkmkwtylp .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -577,7 +570,7 @@
   overflow-x: hidden;
 }
 
-#sbzcftbsws .gt_column_spanner_outer {
+#eqkmkwtylp .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -589,15 +582,15 @@
   padding-right: 4px;
 }
 
-#sbzcftbsws .gt_column_spanner_outer:first-child {
+#eqkmkwtylp .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#sbzcftbsws .gt_column_spanner_outer:last-child {
+#eqkmkwtylp .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#sbzcftbsws .gt_column_spanner {
+#eqkmkwtylp .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -609,11 +602,11 @@
   width: 100%;
 }
 
-#sbzcftbsws .gt_spanner_row {
+#eqkmkwtylp .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#sbzcftbsws .gt_group_heading {
+#eqkmkwtylp .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -639,7 +632,7 @@
   text-align: left;
 }
 
-#sbzcftbsws .gt_empty_group_heading {
+#eqkmkwtylp .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -654,15 +647,15 @@
   vertical-align: middle;
 }
 
-#sbzcftbsws .gt_from_md > :first-child {
+#eqkmkwtylp .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#sbzcftbsws .gt_from_md > :last-child {
+#eqkmkwtylp .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#sbzcftbsws .gt_row {
+#eqkmkwtylp .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -681,7 +674,7 @@
   overflow-x: hidden;
 }
 
-#sbzcftbsws .gt_stub {
+#eqkmkwtylp .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -694,7 +687,7 @@
   padding-right: 5px;
 }
 
-#sbzcftbsws .gt_stub_row_group {
+#eqkmkwtylp .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -708,15 +701,15 @@
   vertical-align: top;
 }
 
-#sbzcftbsws .gt_row_group_first td {
+#eqkmkwtylp .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#sbzcftbsws .gt_row_group_first th {
+#eqkmkwtylp .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#sbzcftbsws .gt_summary_row {
+#eqkmkwtylp .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -726,16 +719,16 @@
   padding-right: 5px;
 }
 
-#sbzcftbsws .gt_first_summary_row {
+#eqkmkwtylp .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#sbzcftbsws .gt_first_summary_row.thick {
+#eqkmkwtylp .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#sbzcftbsws .gt_last_summary_row {
+#eqkmkwtylp .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -745,7 +738,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#sbzcftbsws .gt_grand_summary_row {
+#eqkmkwtylp .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -755,7 +748,7 @@
   padding-right: 5px;
 }
 
-#sbzcftbsws .gt_first_grand_summary_row {
+#eqkmkwtylp .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -765,7 +758,7 @@
   border-top-color: #D3D3D3;
 }
 
-#sbzcftbsws .gt_last_grand_summary_row_top {
+#eqkmkwtylp .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -775,11 +768,11 @@
   border-bottom-color: #D3D3D3;
 }
 
-#sbzcftbsws .gt_striped {
+#eqkmkwtylp .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#sbzcftbsws .gt_table_body {
+#eqkmkwtylp .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -788,7 +781,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#sbzcftbsws .gt_footnotes {
+#eqkmkwtylp .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -802,7 +795,7 @@
   border-right-color: #D3D3D3;
 }
 
-#sbzcftbsws .gt_footnote {
+#eqkmkwtylp .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -811,7 +804,7 @@
   padding-right: 5px;
 }
 
-#sbzcftbsws .gt_sourcenotes {
+#eqkmkwtylp .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -825,7 +818,7 @@
   border-right-color: #D3D3D3;
 }
 
-#sbzcftbsws .gt_sourcenote {
+#eqkmkwtylp .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -833,72 +826,72 @@
   padding-right: 5px;
 }
 
-#sbzcftbsws .gt_left {
+#eqkmkwtylp .gt_left {
   text-align: left;
 }
 
-#sbzcftbsws .gt_center {
+#eqkmkwtylp .gt_center {
   text-align: center;
 }
 
-#sbzcftbsws .gt_right {
+#eqkmkwtylp .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#sbzcftbsws .gt_font_normal {
+#eqkmkwtylp .gt_font_normal {
   font-weight: normal;
 }
 
-#sbzcftbsws .gt_font_bold {
+#eqkmkwtylp .gt_font_bold {
   font-weight: bold;
 }
 
-#sbzcftbsws .gt_font_italic {
+#eqkmkwtylp .gt_font_italic {
   font-style: italic;
 }
 
-#sbzcftbsws .gt_super {
+#eqkmkwtylp .gt_super {
   font-size: 65%;
 }
 
-#sbzcftbsws .gt_footnote_marks {
+#eqkmkwtylp .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#sbzcftbsws .gt_asterisk {
+#eqkmkwtylp .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#sbzcftbsws .gt_indent_1 {
+#eqkmkwtylp .gt_indent_1 {
   text-indent: 5px;
 }
 
-#sbzcftbsws .gt_indent_2 {
+#eqkmkwtylp .gt_indent_2 {
   text-indent: 10px;
 }
 
-#sbzcftbsws .gt_indent_3 {
+#eqkmkwtylp .gt_indent_3 {
   text-indent: 15px;
 }
 
-#sbzcftbsws .gt_indent_4 {
+#eqkmkwtylp .gt_indent_4 {
   text-indent: 20px;
 }
 
-#sbzcftbsws .gt_indent_5 {
+#eqkmkwtylp .gt_indent_5 {
   text-indent: 25px;
 }
 
-#sbzcftbsws .katex-display {
+#eqkmkwtylp .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#sbzcftbsws div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#eqkmkwtylp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -969,13 +962,11 @@
 <li>Can cause import errors in GIS software</li>
 </ul></li>
 </ul>
-<div>
 <ul>
 <li class="fragment"><span style="color: #E6352FFF;"><i class="fa-solid fa-times" aria-label="times"></i></span> <strong>Degrees Decimal Minutes (DDM)</strong>: <code>46° 48.833'N, 71° 12.498'W</code></li>
 <li class="fragment"><span style="color: #E6352FFF;"><i class="fa-solid fa-times" aria-label="times"></i></span> <strong>Degrees Minutes Seconds (DMS)</strong>: <code>46° 48' 50.0"N, 71° 12' 29.9"W</code></li>
 <li class="fragment"><span style="color: #34A74BFF;"><i class="fa-solid fa-check" aria-label="check"></i></span> <strong>Degrees Decimal (DD)</strong>: <code>46.8139, -71.2082</code></li>
 </ul>
-</div>
 </section></section>
 <section>
 <section id="file-naming-and-project-organization" class="title-slide slide level1 center" data-background-color="#2C404A">
@@ -1047,7 +1038,6 @@
 </div></aside></section>
 <section id="file-naming-basic-rules-2" class="slide level2">
 <h2>File naming basic rules</h2>
-<div>
 <ul>
 <li class="fragment"><p>Be consistent and descriptive when naming your files.</p></li>
 <li class="fragment"><p>Separate parts of file names with <code>_</code> or <code>-</code> to add useful information about the data:</p>
@@ -1061,19 +1051,16 @@
 <li class="fragment"><p><span style="color: #E6352FFF;"><i class="fa-solid fa-times" aria-label="times"></i></span> 12-04-09 (2012-04-09 or 2004-12-09 or 2009-04-12, or …, There are a total of 6 possible combinations.)</p></li>
 <li class="fragment"><p><span style="color: #34A74BFF;"><i class="fa-solid fa-check" aria-label="check"></i></span> 2012-04-09 (2012 April 9th)</p></li>
 </ul>
-</div>
 </section>
 <section id="file-naming-basic-rules-examples" class="slide level2">
 <h2>File naming basic rules (examples)</h2>
 <p><em>Imagine that you have to create a file containing temperature data from a weather station.</em></p>
-<div>
 <ul>
 <li class="fragment"><p><span style="color: #E6352FFF;"><i class="fa-solid fa-times" aria-label="times"></i></span> <code>data.csv</code> (not descriptive enough)</p></li>
 <li class="fragment"><p><span style="color: #E6352FFF;"><i class="fa-solid fa-times" aria-label="times"></i></span> <code>temperature_1</code> (what is the meaning of <strong>1</strong> ?, no number padding!)</p></li>
 <li class="fragment"><p><span style="color: #E6352FFF;"><i class="fa-solid fa-times" aria-label="times"></i></span> <code>temperature_20160708</code> (no file extension provided)</p></li>
 <li class="fragment"><p><span style="color: #34A74BFF;"><i class="fa-solid fa-check" aria-label="check"></i></span> <code>station01_temperature_20160708.csv</code></p></li>
 </ul>
-</div>
 <div class="fragment">
 <p><strong>Interesting resources:</strong></p>
 <p><a href="https://www.youtube.com/watch?v=ES1LTlnpLMk">How to name files - Jennifer Bryan (YouTube)</a></p>
@@ -1088,13 +1075,11 @@
 <section id="preserve-information-keep-your-raw-data-raw" class="slide level2">
 <h2>Preserve information: keep your raw data raw</h2>
 <p>Basic recommendations to preserve the raw data for future use:</p>
-<div>
 <ul>
 <li class="fragment"><p>Do not make any changes or corrections to the original raw data files.</p></li>
 <li class="fragment"><p><span class="emphasize">Use a scripted language (R, Python, Matlab, etc.) to perform analysis or make corrections and save that information in a separate file.</span></p></li>
 <li class="fragment"><p>If you want to do some analyses in Excel <sup>1</sup>, make a copy of the file and do your calculations and graphs in the copy.</p></li>
 </ul>
-</div>
 <div class="fragment">
 <p><span class="small">Source: <a href="https://dataoneorg.github.io/Education/bestpractices/preserve-information-keep">Preserve information: Keep raw data raw</a></span></p>
 </div>
@@ -1110,14 +1095,12 @@
 </section>
 <section id="project-directory-structure" class="slide level2">
 <h2>Project directory structure</h2>
-<div>
 <ul>
 <li class="fragment"><p>Choosing a logical and consistent way to organize your data files makes it easier for you and your colleagues to find and use your data.</p></li>
 <li class="fragment"><p>Consider using a specific folder to store raw data files.</p></li>
 <li class="fragment"><p>In my workflow, I use a folder named <code>raw</code> in which I consider files as <span class="emphasize">read-only</span>.</p></li>
 <li class="fragment"><p><span class="emphasize">Data files produced by code</span> are placed in a folder named <code>clean</code>.</p></li>
 </ul>
-</div>
 </section>
 <section id="project-directory-structure-1" class="slide level2">
 <h2>Project directory structure</h2>
@@ -1134,12 +1117,10 @@
 </section>
 <section id="why-do-we-want-tidy-data" class="slide level2">
 <h2>Why do we want tidy data?</h2>
-<div>
 <ul>
 <li class="fragment"><p>Often said that <span class="emphasize">80% of the data analysis is dedicated to cleaning and data preparation!</span></p></li>
 <li class="fragment"><p>Well-formatted data allows for quicker <span class="emphasize">visualization</span>, <span class="emphasize">modeling</span>, <span class="emphasize">manipulation</span> and <span class="emphasize">archiving</span>.</p></li>
 </ul>
-</div>
 <div class="fragment">
 <div class="center-align">
 <div class="quarto-figure quarto-figure-center">
@@ -1166,17 +1147,13 @@
 <section id="how-data-is-often-structured" class="slide level2">
 <h2>How data is often structured</h2>
 <ul>
-<li>Many researchers structure their data in such a way that it is easily manipulated by a human, <span class="emphasize">but not so much programatically</span>.</li>
-</ul>
-<div class="fragment">
-<ul>
-<li>Common issues with data:
+<li><p>Many researchers structure their data in such a way that it is easily manipulated by a human, <span class="emphasize">but not so much programatically</span>.</p></li>
+<li><p>Common issues</p>
 <ol type="1">
 <li>Column headers are values, not variable names</li>
 <li>Multiple variables in a single column</li>
 </ol></li>
 </ul>
-</div>
 <div class="fragment">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -1230,7 +1207,8 @@
 </section>
 <section id="column-headers-are-values" class="slide level2">
 <h2>Column headers are values</h2>
-<p>In this example, the column headers are values (species names) rather than variable names. We are turning <code>arctic_tern</code> and <code>glaucous_gull</code> into two separate columns: <code>species</code> and <code>count</code>.</p>
+<p>In this example, the column headers are values (species names) rather than variable names.</p>
+<p><br></p>
 <div class="columns">
 <div class="column smaller" style="width:40%;">
 <div class="cell" data-layout-align="center">
@@ -1364,7 +1342,7 @@
 </section>
 <section id="multiple-variables-in-a-single-column" class="slide level2">
 <h2>Multiple variables in a single column</h2>
-<p>Like the <code>coordinates</code> column in the example below. We can separate the <code>coordinates</code> column into two columns: <code>longitude</code> and <code>latitude</code>.</p>
+<p>Like the <code>coordinates</code> column in the example below.</p>
 <p><br></p>
 <div class="columns">
 <div class="column smaller" style="width:40%;">
@@ -1538,11 +1516,10 @@
 </div>
 </div></div>
 </section>
-<section id="mapping-the-tidy-data" class="slide level2">
-<h2>Mapping the tidy data</h2>
-<p>Once the data is tidy, it is easy to visualize it. We can use the coordinates to plot the data on a map and choose a better projection.</p>
+<section id="map" class="slide level2">
+<h2>Map</h2>
 
-<img data-src="index_files/figure-revealjs/map_greenland-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3000"></section>
+<img data-src="index_files/figure-revealjs/unnamed-chunk-8-1.svg" class="quarto-figure quarto-figure-center r-stretch" width="3000"></section>
 <section id="keep-your-data-as-rectangle-tables" class="slide level2">
 <h2>Keep your data as rectangle tables</h2>
 <p>If you use a spreadsheet program, <span class="emphasize">keep your data arranged as rectangular tables</span>. Otherwise, <span class="emphasize">it makes data importation difficult</span>.</p>
@@ -1589,7 +1566,6 @@
 </section>
 <section id="variable-names-2" class="slide level2">
 <h2>Variable names</h2>
-<div>
 <ul>
 <li class="fragment"><p>Provide information about abbreviations.</p>
 <ul>
@@ -1606,7 +1582,6 @@
 <li class="fragment"><code>last_updated</code> vs <code>updated_at</code></li>
 </ul></li>
 </ul>
-</div>
 </section>
 <section id="variable-names-3" class="slide level2">
 <h2>Variable names</h2>
@@ -1625,7 +1600,6 @@
 </div></aside></section>
 <section id="missing-values" class="slide level2">
 <h2>Missing values</h2>
-<div>
 <ul>
 <li class="fragment"><p><span class="emphasize">Missing values should be simply represented by spaces in your data files.</span></p></li>
 <li class="fragment"><p>R, Python, Matlab and other programming languages deal well with this.</p></li>
@@ -1643,11 +1617,9 @@
 </ul></li>
 </ul></li>
 </ul>
-</div>
 </section>
 <section id="visualization" class="slide level2">
 <h2>Visualization</h2>
-<div>
 <ul>
 <li class="fragment"><p>Once data is tidy, <span class="emphasize">perform a visual inspection</span> to make sure there are no obvious errors in your data.</p></li>
 <li class="fragment"><p>A picture is worth a thousand words.</p>
@@ -1656,7 +1628,6 @@
 </ul></li>
 <li class="fragment"><p>A histogram can be used to represent the distribution of numerical data.</p></li>
 </ul>
-</div>
 </section>
 <section id="visualization-1" class="slide level2">
 <h2>Visualization</h2>
@@ -1803,14 +1774,12 @@
 <section id="the-importance-of-data-publishing" class="slide level2">
 <h2>The importance of Data Publishing</h2>
 <p>Many journals and <a href="http://www.science.gc.ca/eic/site/063.nsf/fra/h_97610.html">funding agencies</a> now require to have public archiving strategies. Why?</p>
-<div>
 <ul>
 <li class="fragment"><p>Data from publicly funded research should be openly accessible to everyone.</p></li>
 <li class="fragment"><p>Make your data <span class="emphasize">discoverable</span> and <span class="emphasize">citable</span> (using <span class="emphasize">DOI, Digital Object Identifier</span>).</p></li>
 <li class="fragment"><p>Professional data centers ensure long-term accessibility</p></li>
-<li class="fragment"><p>Data can be reused in other studies (promotes scientific collaborations)</p></li>
+<li class="fragment"><p>Data can be reused in other studies (promotes scientific collaboration)</p></li>
 </ul>
-</div>
 </section>
 <section id="publishing-your-data-1" class="slide level2">
 <h2>Publishing your data</h2>
@@ -1867,7 +1836,7 @@
 <section id="section" class="slide level2">
 <h2></h2>
 
-<img data-src="index_files/figure-revealjs/unnamed-chunk-8-1.svg" class="quarto-figure quarto-figure-center r-stretch" alt="Bar plot showing the number of downloads per country for each dataset." width="3600"></section>
+<img data-src="index_files/figure-revealjs/unnamed-chunk-9-1.svg" class="quarto-figure quarto-figure-center r-stretch" alt="Bar plot showing the number of downloads per country for each dataset." width="3600"></section>
 <section id="open-data-repositories" class="slide level2">
 <h2>Open data repositories</h2>
 <ul>
@@ -1891,7 +1860,6 @@
 </section>
 <section id="take-home-messages-1" class="slide level2">
 <h2>Take home messages</h2>
-<div>
 <ul>
 <li class="fragment"><p>Choose non-proprietary file formats (ex.: <code>CSV</code>).</p></li>
 <li class="fragment"><p>Give your files and variables meaningful names.</p></li>
@@ -1902,9 +1870,7 @@
 </ul></li>
 <li class="fragment"><p>Use a version control system (git) for your analysis scripts.</p></li>
 <li class="fragment"><p><span class="emphasize">When possible, share the data and the scripts that were used in your research papers.</span></p></li>
-<li class="fragment"><p>If you have any questions regarding your data, do not hesitate to contact your designated data scientist at your institution.</p></li>
 </ul>
-</div>
 
 </section></section>
 
@@ -2162,190 +2128,172 @@
     </script>
 
     <script id="quarto-html-after-body" type="application/javascript">
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-      const toggleBodyColorMode = (bsSheetEl) => {
-        const mode = bsSheetEl.getAttribute("data-mode");
-        const bodyEl = window.document.querySelector("body");
-        if (mode === "dark") {
-          bodyEl.classList.add("quarto-dark");
-          bodyEl.classList.remove("quarto-light");
-        } else {
-          bodyEl.classList.add("quarto-light");
-          bodyEl.classList.remove("quarto-dark");
-        }
-      }
-      const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
-      }
-      toggleBodyColorPrimary();  
-      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-      tabsets.forEach(function(tabset) {
-        const tabby = new Tabby('#' + tabset.id);
-      });
-      const isCodeAnnotation = (el) => {
-        for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {                     
-            return true;
-          }
-        }
-        return false;
-      }
-      const onCopySuccess = function(e) {
-        // button target
-        const button = e.trigger;
-        // don't keep focus
-        button.blur();
-        // flash "checked"
-        button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
-        let tooltip;
-        if (window.bootstrap) {
-          button.setAttribute("data-bs-toggle", "tooltip");
-          button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
-              customClass: "code-copy-button-tooltip",
-              offset: [0, -8]});
-          tooltip.show();    
-        }
-        setTimeout(function() {
-          if (tooltip) {
-            tooltip.hide();
-            button.removeAttribute("data-bs-title");
-            button.removeAttribute("data-bs-toggle");
-            button.removeAttribute("data-bs-placement");
-          }
-          button.setAttribute("title", currentTitle);
-          button.classList.remove('code-copy-button-checked');
-        }, 1000);
-        // clear code selection
-        e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
             }
           }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
-      });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          return false;
         }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
             }
-          }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
         }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-        const config = {
-          allowHTML: true,
-          maxWidth: 500,
-          delay: 100,
-          arrow: false,
-          appendTo: function(el) {
-              return el.closest('section.slide') || el.parentElement;
-          },
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'light-border',
-          placement: 'bottom-start',
-        };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
-          config['offset'] = [0,0];
-          config['maxWidth'] = 700;
-        window.tippy(el, config); 
-      }
-      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-      for (var i=0; i<noterefs.length; i++) {
-        const ref = noterefs[i];
-        tippyHover(ref, function() {
-          // use id or data attribute instead here
-          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-          try { href = new URL(href).hash; } catch {}
-          const id = href.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
-          }
-        });
-      }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
-            };
-          } else {
-            return findCites(el.parentElement)
-          }
-        } else {
-          return undefined;
-        }
-      };
-      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-      for (var i=0; i<bibliorefs.length; i++) {
-        const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
               }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
           });
         }
-      }
-    });
-    </script>
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
     
 
 </body></html>
